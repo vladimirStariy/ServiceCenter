@@ -7,7 +7,7 @@ namespace ServiceCenter.Domain.Entity
         public uint Order_ID { get; set; }
         public string Status { get; set; }
         public DateTime Order_date { get; set; }
-        public DateTime Order_close_date { get; set; }
+        public DateTime? Order_close_date { get; set; }
 
         public uint Abonent_ID { get; set; }
         [ForeignKey("Abonent_ID")]

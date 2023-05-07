@@ -1,7 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using ServiceCenter.Data;
+using ServiceCenter.View;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connection = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseLazyLoadingProxies()
+           .UseSqlServer(connection)
+);
+
+builder.Services.InitializeRepositories();
+builder.Services.InitializeServices();
 
 var app = builder.Build();
 

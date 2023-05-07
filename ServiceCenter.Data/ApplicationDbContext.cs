@@ -59,6 +59,9 @@ namespace ServiceCenter.Data
             {
                 builder.ToTable("Orders").HasKey(x => x.Order_ID);
                 builder.Property(x => x.Order_ID).ValueGeneratedOnAdd();
+                builder.HasMany(x => x.Services)
+                       .WithMany(x => x.Orders)
+                       .UsingEntity(x => x.ToTable("OrderServices"));
             });
 
             modelBuilder.Entity<Payment>(builder =>
