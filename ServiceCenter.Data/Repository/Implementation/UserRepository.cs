@@ -1,37 +1,44 @@
-﻿using ServiceCenter.Domain.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using ServiceCenter.Domain.Entity;
 
 namespace ServiceCenter.Data.Repository.Implementation
 {
     public class UserRepository : IRepository<User>
     {
-        public Task Create(User entity)
+        private readonly ApplicationDbContext _db;
+
+        public UserRepository(ApplicationDbContext db)
         {
-            throw new NotImplementedException();
+            _db = db;
         }
 
-        public Task Delete(User entity)
+        public async Task Create(User entity)
         {
-            throw new NotImplementedException();
+            await _db.Users.AddAsync(entity);
+            await _db.SaveChangesAsync();
+        }
+
+        public async Task Delete(User entity)
+        {
+            _db.Users.Remove(entity);
+            await _db.SaveChangesAsync();
         }
 
         public IQueryable<User> Get()
         {
-            throw new NotImplementedException();
+            return _db.Users;
         }
 
         public Task<User> GetById(uint id)
         {
-            throw new NotImplementedException();
+            return _db.Users.Where(x => x.User_ID == id).FirstOrDefaultAsync();
         }
 
-        public Task<User> Update(User entity)
+        public async Task<User> Update(User entity)
         {
-            throw new NotImplementedException();
+            _db.Users.Update(entity);
+            await _db.SaveChangesAsync();
+            return entity;
         }
     }
 }
