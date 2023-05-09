@@ -1,0 +1,193 @@
+﻿<!-- Begin Page Content -->
+<div class="container-fluid">
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Оборудование/материалы</h1>
+@*<p class="mb-4">Компания «Белтелеком» предоставляет список тарифных планов для физических и юридических лиц, включая в себя услуги телефонной связи, телевидение, доступ в интернет, умный дом, максифон и пакеты услуг.</p>*@
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="dataTables_length" id="dataTable_length">
+                        <label>Показать 
+                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select> 
+                            строк</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a class="btn btn-success" href="#" data-toggle="modal" data-target="#AddModal">Добавить</a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div id="dataTable_filter" class="dataTables_filter">
+                        <label>Поиск:
+                            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
+                        </label>
+                    </div>
+                </div>
+        </div>                          
+
+            <div class="my-2"></div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Количество</th>
+                            <th>Стоимость</th>
+                            <th width="10%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Пластиковые (электротехнические) корода</td>
+                            <td>1 метр</td>
+                            <td>0.96</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-icon-split" data-toggle="modal" data-target="#EditModal">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Металлорукава</td>
+                            <td>1 метр</td>
+                            <td>2.64</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Пластиковые плинтуса</td>
+                            <td>1 метр</td>
+                            <td>0.96</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+
+            <form class="modal fade" id="AddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Добавить материал</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group<div class="card o-hidden border-0 shadow-lg my-5">
+          
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Наименование</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+                             
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Количество</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Стоимость</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <a href="#" class="btn btn-success btn-user btn-block">Сохранить</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+            <form class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Редактировать материал</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group<div class="card o-hidden border-0 shadow-lg my-5">
+          
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Наименование</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+                             
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Количество</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Стоимость</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <a href="#" class="btn btn-success btn-user btn-block">Обновить</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>

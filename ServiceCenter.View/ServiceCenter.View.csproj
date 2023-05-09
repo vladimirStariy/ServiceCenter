@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Guest\Data\" />
     <Folder Include="Areas\Guest\Models\" />
+    <Folder Include="Areas\Operator\Data\" />
+    <Folder Include="Areas\Operator\Models\" />
   </ItemGroup>
 
   <ItemGroup>
