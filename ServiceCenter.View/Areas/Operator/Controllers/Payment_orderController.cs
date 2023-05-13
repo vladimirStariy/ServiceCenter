@@ -2,9 +2,9 @@
 
 namespace ServiceCenter.View.Areas.Operator.Controllers
 {
-    public class TariffController : Controller
+    public class Payment_orderController : Controller
     {
-        public IActionResult Tariff_operator()
+        public IActionResult Payment_order()
         {
             return View();
         }

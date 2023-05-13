@@ -1,5 +1,183 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<!-- Begin Page Content -->
+<div class="container-fluid">
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Заявки</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <div class="dataTables_length" id="dataTable_length">
+                        <label>Показать 
+                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select> 
+                            строк</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3">
+                    <a class="btn btn-success" href="#" data-toggle="modal" data-target="#AddModal">Добавить</a>
+                </div>
+
+                <div class="col-sm-12 col-md-3">
+                    <label>Фильтровать по статусу
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Выбрать...</option>
+                        <option value="1">Активная</option>
+                        <option value="2">Завершена</option>
+                    </select>
+                    </label>
+                    
+                    <a href="#" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-60">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-3">
+                    <div id="dataTable_filter" class="dataTables_filter">
+                        <label>Поиск:
+                            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
+                        </label>
+                    </div>
+                </div>
+        </div>                          
+
+            <div class="my-2"></div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Абонент</th>
+                            <th>Сотрудник</th>
+                            <th>Услуга</th>
+                            <th>Материалы</th>
+                            <th>Статус</th>
+                            <th>Дата заявки</th>
+                            <th>Дата закрытия заявки</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Петров Василий Иванович</td>
+                            <td>Сидоров Сергей Александрович</td>
+                            <td>Установка телефона</td>
+                            <td>RG-12</td>
+                            <td>Активный</td>
+                            <td>10.05.2023</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Петров Василий Иванович</td>
+                            <td>Сидоров Сергей Александрович</td>
+                            <td>Установка телефона</td>
+                            <td>RG-12</td>
+                            <td>Активный</td>
+                            <td>10.05.2023</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Петров Василий Иванович</td>
+                            <td>Сидоров Сергей Александрович</td>
+                            <td>Установка телефона</td>
+                            <td>RG-12</td>
+                            <td>Активный</td>
+                            <td>10.05.2023</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+            <form class="modal fade" id="AddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Информация об абоненте</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group<div class="card o-hidden border-0 shadow-lg my-5">
+
+                            <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Абонент</label>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option>Выбрать...</option>
+                                        <option value="1">Сидоров Анатолий Павлович</option>
+                                        <option value="2">Сидоров Анатолий Павлович</option>
+                                        <option value="3">Сидоров Анатолий Павлович</option>
+                                    </select>
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Сотрудник</label>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option>Выбрать...</option>
+                                        <option value="1">Васильев Александр Дмитириевич</option>
+                                        <option value="2">Васильев Александр Дмитириевич</option>
+                                        <option value="3">Васильев Александр Дмитириевич</option>
+                                    </select>
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Услуга</label>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option>Выбрать...</option>
+                                        <option value="1">Установка телефона</option>
+                                        <option value="2">Демонтаж проводки</option>
+                                        <option value="3">Прокладывание кабеля</option>
+                                    </select>
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Услуга</label>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option>Выбрать...</option>
+                                        <option value="1">Установка телефона</option>
+                                        <option value="2">Демонтаж проводки</option>
+                                        <option value="3">Прокладывание кабеля</option>
+                                    </select>
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Статус</label>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option>Выбрать...</option>
+                                        <option value="1">Активный</option>
+                                    </select>
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Дата заявки</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <a href="#" class="btn btn-success btn-user btn-block">Сохранить</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>

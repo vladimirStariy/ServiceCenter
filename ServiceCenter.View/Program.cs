@@ -28,7 +28,17 @@ app.MapAreaControllerRoute(
 app.MapAreaControllerRoute(
     name: "default",
     areaName: "Operator",
-    pattern: "operator/{controller=Tariff}/{action=Index}/{id?}");
+    pattern: "operator/{controller=Services}/{action=Services_operator}/{id?}");
+
+app.MapAreaControllerRoute(
+    name: "default",
+    areaName: "Operator",
+    pattern: "operator/{controller=Tariff}/{action=Tariff_operator}/{id?}");
+
+app.MapAreaControllerRoute(
+    name: "default",
+    areaName: "Operator",
+    pattern: "operator/{controller=Employee}/{action=Employee_operator}/{id?}");
 
 app.MapAreaControllerRoute(
     name: "default",
@@ -40,6 +50,21 @@ app.MapAreaControllerRoute(
     name: "default",
     areaName: "Operator",
     pattern: "operator/{controller=Abonent}/{action=Abonent}/{id?}");
+
+app.MapAreaControllerRoute(
+    name: "default",
+    areaName: "Operator",
+    pattern: "operator/{controller=Reports}/{action=Reports}/{id?}");
+
+app.MapAreaControllerRoute(
+    name: "default",
+    areaName: "Operator",
+    pattern: "operator/{controller=Payment_order}/{action=Payment_order}/{id?}");
+
+app.MapAreaControllerRoute(
+    name: "default",
+    areaName: "Operator",
+    pattern: "operator/{controller=Payment_dogovor}/{action=Payment_dogovor}/{id?}");
 
 app.MapAreaControllerRoute(
     name: "default",
@@ -65,6 +90,11 @@ app.MapAreaControllerRoute(
     name: "default",
     areaName: "Admin",
     pattern: "admin/{controller=Employee}/{action=Employee}/{id?}");
+
+app.MapAreaControllerRoute(
+    name: "default",
+    areaName: "Employee",
+    pattern: "employee/{controller=Order}/{action=Order}/{id?}");
 
 app.MapControllerRoute(
     name: "default",

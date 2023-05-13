@@ -1,1 +1,280 @@
-﻿
+﻿<!-- Begin Page Content -->
+<div class="container-fluid">
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Абоненты</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="dataTables_length" id="dataTable_length">
+                        <label>Показать 
+                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select> 
+                            строк</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a class="btn btn-success" href="#" data-toggle="modal" data-target="#AddModal">Добавить</a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div id="dataTable_filter" class="dataTables_filter">
+                        <label>Поиск:
+                            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
+                        </label>
+                    </div>
+                </div>
+        </div>                          
+
+            <div class="my-2"></div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Номер договора</th>
+                            <th>ФИО</th>
+                            <th>Телефон</th>
+                            <th>Дата рождения</th>
+                            <th>Адрес</th>
+                            <th>Номер паспорта</th>
+                            <th>Тарифный план</th>
+                            <th width="15%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2534576</td>
+                            <td>Сидоров Анатолий Павлович</td>
+                            <td>+375 33 679 02 34</td>
+                            <td>12.05.1986</td>
+                            <td>г.Полоцк, ул.Гоголя, д.32</td>
+                            <td>5672894</td>
+                            <td>Ясна плюс</td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-primary btn-icon-split" data-toggle="modal" data-target="#EditModal">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2534576</td>
+                            <td>Сидоров Анатолий Павлович</td>
+                            <td>+375 33 679 02 34</td>
+                            <td>12.05.1986</td>
+                            <td>г.Полоцк, ул.Гоголя, д.32</td>
+                            <td>5672894</td>
+                            <td>Ясна плюс</td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-primary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2534576</td>
+                            <td>Сидоров Анатолий Павлович</td>
+                            <td>+375 33 679 02 34</td>
+                            <td>12.05.1986</td>
+                            <td>г.Полоцк, ул.Гоголя, д.32</td>
+                            <td>5672894</td>
+                            <td>Ясна плюс</td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-primary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50"> 
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+            <form class="modal fade" id="AddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Добавить абонента</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group<div class="card o-hidden border-0 shadow-lg my-5">
+          
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Номер договора</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+                             
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">ФИО</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Телефон</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Дата рождения</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Адрес</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Номер паспорта</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Тарифный план</label>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected>Выбрать...</option>
+                                        <option value="1">Рекорд 200</option>
+                                        <option value="2">Zala все включено HD</option>
+                                        <option value="3">Телефонная связь</option>
+                                    </select>
+                             </div>
+
+                             <a href="#" class="btn btn-success btn-user btn-block">Сохранить</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Редактировать абонента</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group<div class="card o-hidden border-0 shadow-lg my-5">
+          
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Номер договора</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+                             
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">ФИО</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Телефон</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Дата рождения</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Адрес</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Номер паспорта</label>
+                                    <input type="input" class="form-control form-control-user">
+                             </div>
+
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Тарифный план</label>
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected>Выбрать...</option>
+                                        <option value="1">Рекорд 200</option>
+                                        <option value="2">Zala все включено HD</option>
+                                        <option value="3">Телефонная связь</option>
+                                    </select>
+                             </div>
+
+                             <a href="#" class="btn btn-success btn-user btn-block">Обновить</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>

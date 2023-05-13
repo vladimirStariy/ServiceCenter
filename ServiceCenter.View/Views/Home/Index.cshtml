@@ -8,14 +8,20 @@
     <p><a asp-area="Guest" asp-controller="Guest" asp-action="Index">ОБЛАСТЬ ГОСТЯ</a></p>
     <p><a asp-area="Guest" asp-controller="Guest" asp-action="Services">Услуги</a></p>
     <p><a asp-area="Guest" asp-controller="Guest" asp-action="Tariff">Тарифные планы</a></p>
-    @*<p><a asp-area="Operator" asp-controller="Tariff" asp-action="Index">Тарифные планы</a></p>
-    <p><a asp-area="Operator" asp-controller="Orders" asp-action="Orders">Заявки</a></p>*@
+    <p><a asp-area="Operator" asp-controller="Tariff" asp-action="Tariff_operator">Тарифные планы</a></p>
+    <p><a asp-area="Operator" asp-controller="Employee" asp-action="Employee_operator">Сотрудники</a></p>
+    <p><a asp-area="Operator" asp-controller="Orders" asp-action="Orders">Заявки</a></p>
+    <p><a asp-area="Operator" asp-controller="Services" asp-action="Services_operator">Услуги</a></p>
     <p><a asp-area="Operator" asp-controller="Abonent" asp-action="Abonent">Абоненты</a></p>
+    <p><a asp-area="Operator" asp-controller="Payment_order" asp-action="Payment_order">Оплата по заявке</a></p>
+    <p><a asp-area="Operator" asp-controller="Payment_dogovor" asp-action="Payment_dogovor">Оплата по договору</a></p>
+    <p><a asp-area="Operator" asp-controller="Reports" asp-action="Reports">Отчеты</a></p>
     <p><a asp-area="Admin" asp-controller="Tariff" asp-action="Tariff">Тарифные планы</a></p>
     <p><a asp-area="Admin" asp-controller="Types_tariff" asp-action="Types_tariff">Виды тарифных планов</a></p>
     <p><a asp-area="Admin" asp-controller="Services" asp-action="Services">Услуги</a></p>
-    <p><a asp-area="Admin" asp-controller="Materials" asp-action="Materials">Материалы/оборудование</a></p>
+    <p><a asp-area="Admin" asp-controller="Materials" asp-action="Materials">Материалы</a></p>
     <p><a asp-area="Admin" asp-controller="Employee" asp-action="Employee">Сотрудники</a></p>
+    <p><a asp-area="Employee" asp-controller="Order" asp-action="Order">Заявки</a></p>
 </div>
 
 
