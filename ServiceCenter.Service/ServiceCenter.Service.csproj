@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceCenter.Data\ServiceCenter.Data.csproj" />
+    <ProjectReference Include="..\ServiceCenter.Domain\ServiceCenter.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

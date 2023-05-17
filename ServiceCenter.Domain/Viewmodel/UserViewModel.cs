@@ -1,14 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ServiceCenter.Domain.Enum;
+using System.ComponentModel.DataAnnotations;
 
 namespace ServiceCenter.Domain.Viewmodel
 {
     public class UserViewModel
     {
-        [Display(Name = "№")]
-        public uint User_ID { get; set; }
         [Display(Name = "Логин")]
         public string Login { get; set; }
+        [Display(Name = "Пароль")]
+        public string Password { get; set; }
         [Display(Name = "Роль")]
-        public string Role { get; set; }
+        public Role Role { get; set; }
     }
 }

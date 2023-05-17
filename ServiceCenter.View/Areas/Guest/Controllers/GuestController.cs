@@ -8,5 +8,15 @@ namespace ServiceCenter.View.Areas.Guest.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Services()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Tariff()
+        {
+            return View();
+        }
     }
 }
